@@ -1,0 +1,41 @@
+# Entornos virtuales de Python
+**/venv/
+**/env/
+**/.venv/
+**/mtcnn/
+**/__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Archivos de modelos grandes
+*.pt
+*.h5
+*.pkl
+*.joblib
+
+# Archivos de datos
+*.wav
+*.jpg
+*.jpeg
+*.png
+*.mp4
+*.avi
+
+# Archivos temporales
+*.tmp
+*.log
+*.cache
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Archivos de dependencias
+node_modules/

@@ -1,0 +1,5 @@
+1) Scraping de Noticias
+https://colab.research.google.com/drive/1A1D408GJoN6NAETUAfqRaJEoBfr0qRJN?usp=sharing
+
+2)Scrping E-Comerce
+https://colab.research.google.com/drive/1reqVFG8kInISXC9bi3XY0jv9H-27J7rN?usp=sharing
