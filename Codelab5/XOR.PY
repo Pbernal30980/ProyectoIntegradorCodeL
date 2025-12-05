@@ -1,6 +1,11 @@
+import os
 import numpy as np  
 from tensorflow.keras.models import Sequential  
 from tensorflow.keras.layers import Dense, Input
+
+# Reducir mensajes verbosos de TensorFlow y desactivar oneDNN para salida estable
+os.environ.setdefault('TF_CPP_MIN_LOG_LEVEL', '2')
+os.environ.setdefault('TF_ENABLE_ONEDNN_OPTS', '0')
 
 # ------------------------------  
 # 1. Datos de entrenamiento (XOR)  
@@ -45,10 +50,10 @@ model.compile(
 # ------------------------------  
 # 4. Entrenar el modelo  
 # ------------------------------  
-history = model.fit(  
-    X, y,  
-    epochs=5000,       # muchas épocas porque XOR no es lineal  
-    verbose=0         # 0 = sin logs, cámbialo a 1 para ver entrenamiento  
+history = model.fit(
+    X, y,
+    epochs=200,        # reducido para ejecutar rápido y mostrar progreso
+    verbose=1          # 1 = barra de progreso por época
 )
 
 # ------------------------------  
